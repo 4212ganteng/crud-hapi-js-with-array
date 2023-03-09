@@ -4,31 +4,31 @@ const routes = [
   // add new book
   {
     method: "POST",
-    path: "/book",
+    path: "/books",
     handler: handlerbook.Addbook,
   },
   //   find all
   {
     method: "GET",
-    path: "/",
+    path: "/books",
     handler: handlerbook.Findbook,
   },
   //   find one
   {
     method: "GET",
-    path: "/{id}",
+    path: "/books/{bookId}",
     handler: handlerbook.GetbookById,
   },
   //   update book
   {
     method: "PUT",
-    path: "/book/{id}",
+    path: "/books/{bookId}",
     handler: handlerbook.Updatebook,
   },
   //   Delete book
   {
     method: "DELETE",
-    path: "/book/{id}",
+    path: "/books/{bookId}",
     handler: handlerbook.Deletebook,
   },
   //   search by title
